@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand principals */
+  --brand-primary: #6560F0;      /* Aurora Violeta */
+  --brand-info: #1FB1E6;         /* Aurora Azul Claro */
+  --brand-success: #06B48A;      /* Aurora Verde Turquesa */
+  --brand-warning: #F3C44C;
+  --brand-error: #EF2929;
+
+  /* Accents */
+  --accent-1: #8FD6A6;
+  --accent-2: #59CBB7;
+  --accent-3: #60B3E6;
+  --accent-4: #9ECFF7;
+  --accent-5: #B2B0FF;
+
+  /* Surfaces & text */
+  --surface-bg: #F2F1F9;
+  --surface-contrast: #FFFFFF;
+  --surface-sidebar: #222145;
+
+  --text-primary: #2B2A3F;
+  --text-secondary: #8E8DA1;
+
+  --border-subtle: #E8E8EE;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+.container-max {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+.section {
+  @apply py-12 md:py-20;
+}
+.card {
+  @apply bg-surface-contrast rounded-xl shadow-soft border border-border-subtle;
+}
+.btn {
+  @apply inline-flex items-center gap-2 rounded-md px-4 py-2 font-medium transition;
+}
+.btn-primary {
+  @apply bg-brand-primary text-white hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-brand-info;
+}
+.btn-secondary {
+  @apply bg-surface-contrast text-text-primary border border-border-subtle hover:bg-white;
+}
+.badge {
+  @apply inline-flex items-center rounded-full px-3 py-1 text-sm text-brand-primary;
+  background-color: color-mix(in srgb, var(--accent-5) 30%, transparent);
+}
