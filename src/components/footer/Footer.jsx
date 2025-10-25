@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="mt-16 border-t border-border-subtle bg-surface-contrast">
+    <footer className="mt-18 border-t border-border-subtle bg-surface-contrast">
       <div className="container-max py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <div className="w-10 h-10 rounded-lg mb-2" style={{ background: 'var(--grad-aurora-base)' }} />
